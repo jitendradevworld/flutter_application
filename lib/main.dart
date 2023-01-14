@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application/Pages/home_page.dart';
 import 'package:flutter_application/Pages/login_page.dart';
 import 'package:flutter_application/utils/routes.dart';
+import 'package:flutter_application/widgets/themes.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp()); //
@@ -16,9 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
+      theme: MyTheme.lightTheme(context),
       debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
         brightness: Brightness.light,
@@ -34,3 +34,5 @@ class MyApp extends StatelessWidget {
 
   // bringVegetables({required bool thaila, int rupees = 100}) {}
 }
+
+//test1
